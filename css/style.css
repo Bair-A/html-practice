@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 
                                                                /* main styles */
 body {
-  font-family: 'Montserrat', sans-serif;;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
 
@@ -85,15 +85,14 @@ body {
                                                                 /* header */
 .header{
   background: url(../assets/img/header_bg.png) center/cover no-repeat;
-  width: 100%;
-  height: 100vh;
+  
 }
 
 .header__top{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2% 0 0 0;
+  padding: 28px 0 0 0;
 }
 
 .logo{
@@ -129,7 +128,7 @@ body {
   background-color: #fce38a;
   width: 100%;
   display: block;
-  margin: 10% 0 0 0;
+  margin: 12px 0 0 0;
   opacity: 0;
   transition: .5s;
 }
@@ -154,23 +153,23 @@ body {
   background-color: #fce38a;
   width: 100%;
   display: block;
-  margin: 10% 0 0 0;
+  margin: 12px 0 0 0;
   opacity: 1;
 }
 
 .header__content{
   text-align: center;
-  margin: 10% auto 0;
+  margin: 164px auto 0;
   max-width: 800px;
 }
 
-.header__suptitle{
+.header__subtitle{
   font-family: "Kaushan Script", sans-serif;
   font-size: 72px;
   line-height: 1.2;
   font-weight: 400;
   color: #fff;
-  margin: 0 0 4% 0;
+  margin: 0 0 42px 0;
 }
 
 .header__title{
@@ -188,7 +187,7 @@ body {
   height: 3px;
   background-color: #fff;
   display: block;
-  margin: 7% auto;
+  margin: 71px auto 50px;
 }
 
 .header__button{
@@ -210,16 +209,15 @@ body {
 }
 
 .header__slider{
+  margin: 157px 0 0 0;
   display: flex;
-  margin: 14% 0 0 0;
   justify-content: space-between;
-  position: relative;
 }
 
 .header__slider-item{
   border-top: 3px solid rgba(255,255,255, 0.5);
   width: 23%;
-  padding: 1% 0;
+  padding: 20px 0;
 
   font-size: 18px;
   line-height: 1.2;
@@ -229,6 +227,8 @@ body {
   font-family: "Montserrat", sans-serif;
   opacity: .7;
   transition: .5s;
+
+  position: relative;
 }
 
 .header__slider-item:hover{
@@ -237,20 +237,22 @@ body {
   transition: .5s;
 }
 
-/* .header__slider-item:hover::before{
+.header__slider-item::before{
   content: "";
   height: 3px;
   position: absolute;
   left: 0;  
-  top: 0;
+  top: -3px;
   display: block;
-  width: 6%;
+  width: 70px;
   background-color:#f38181;
-  z-index: 2;
-} */
+  opacity: 0;
+  transition: .5s;
+}
 
-.header__slider-inner{
-  font-size: 24px;
+.header__slider-item:hover::before{
+  opacity: 1;
+  transition: .5s;
 }
 
 .header__slider-item--active{
@@ -263,9 +265,14 @@ body {
   height: 3px;
   position: absolute;
   left: 0;  
-  top: 0;
+  top: -3px;
   display: block;
-  width: 6%;
+  width: 70px;
   background-color:#f38181;
-  z-index: 2;
+  opacity: 1;
+  transition: .5s;
+}
+
+.header__slider-number{
+  font-size: 24px;
 }
