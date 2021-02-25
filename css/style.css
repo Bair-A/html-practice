@@ -293,11 +293,27 @@ body {
   color: #fce38a;
 }
 
+
+
 .header__slider{
   margin: 157px 0 0 0;
   display: flex;
   justify-content: space-between;
 }
+@media(max-width:1200px){
+  
+}
+@media(max-width:992px){
+  
+}
+@media(max-width:767px){
+  .header__slider{
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
 
 .header__slider-item{
   border-top: 3px solid rgba(255,255,255, 0.5);
@@ -315,6 +331,14 @@ body {
 
   position: relative;
 }
+@media(max-width:767px){
+  .header__slider-item{
+    width: 100%;
+    margin: 0  auto;
+  }
+}
+
+
 
 .header__slider-item:hover{
   border-top: 3px solid rgba(255,255,255);
