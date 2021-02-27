@@ -9,7 +9,7 @@ headerBurger.addEventListener("click", () => {
 })
 
 
-headerBurger.addEventListener("touchstart", () => {
+headerBurger.addEventListener("touchend", () => {
     
     headerBurger.classList.toggle("header__burger--active");
     document.querySelector("body").classList.toggle("body--burger-active");   
