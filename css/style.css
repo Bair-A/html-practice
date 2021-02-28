@@ -215,7 +215,7 @@ body {
 @media(max-width:767px){
   .header__menu{
     position: absolute;
-    top: -150vh;
+    top: -100vh;
     background-color: #e68582;
     height: 100vh;
     width: 100%;
@@ -294,9 +294,13 @@ body {
     margin: 35px auto 0;
     font-size: 25px;
   }
-
 }
-
+@media (max-width:767px) and (orientation: landscape) {
+  .header__link{
+      margin: 5px auto;
+      font-size: 15px;
+  }
+}
 
 
 .header__content{
