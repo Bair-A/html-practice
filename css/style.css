@@ -230,7 +230,7 @@ body {
 }
 @media (max-width:767px) and (orientation: landscape) {
   .header__menu{
-    overflow: auto;
+    overflow: scroll;
   }
 }
 
