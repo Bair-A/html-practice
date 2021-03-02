@@ -237,11 +237,6 @@ body {
     transition: 1s;
   }
 }
-/* @media (max-width:767px) and (orientation: landscape) {
-  .header__menu{
-    overflow: scroll;
-  }
-} */
 
 
 
@@ -321,13 +316,8 @@ body {
   text-align: center;
   margin: 164px auto 0;
   max-width: 800px;
-<<<<<<< HEAD
-  display: flex;
-  border: indigo 2px solid;
-=======
   position: relative;
   min-height: 500px;
->>>>>>> headerSlider
 }
 @media(max-width:1200px){
   .header__content{
@@ -351,8 +341,6 @@ body {
 
 .header__slider-page{
   margin: 0 auto;
-  /* position: relative; */
-  /* left: 0; */
   text-align: center;
 }
 
@@ -557,4 +545,74 @@ body {
 
 .header__slider-number{
   font-size: 24px;
+}
+
+                                              /* story about us */
+.title-wrapper{
+  margin: 90px auto 100px;
+  text-align: center;
+}
+
+.subtitle{
+  font-family: "Kaushan Script", "sans-serif";
+  line-height: 1.2;
+  font-weight: 400;
+  color: #333;
+  font-size: 24px;
+}
+
+.title{
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #333;
+  text-transform: uppercase;
+  margin: 23px 0 0 0;
+}
+
+.title::after{
+  content: '';
+  width: 60px;
+  background-color: #f38181;
+  height: 3px;
+  margin: 40px auto 47px;
+  display: block;
+}    
+
+.title-text{
+  font-family: "Roboto", "sans-serif";
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999;
+}
+
+.about__img-wrapper{
+  min-height: 250px;
+  margin: 0 auto 110px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__link{
+  display: block;
+  max-height: 229px;
+  width: 30%;
+  position: relative;
+  background-color: #95e1d3;
+  transition: 4s;
+}
+
+.about__img{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  transition: 4s;
+}
+
+.about__img:hover{
+  top: -10px;
+  left: -10px;
+  transition: 4s;
 }
