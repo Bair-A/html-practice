@@ -321,6 +321,8 @@ body {
   text-align: center;
   margin: 164px auto 0;
   max-width: 800px;
+  display: flex;
+  border: indigo 2px solid;
 }
 @media(max-width:1200px){
   .header__content{
@@ -339,6 +341,13 @@ body {
   }
 }
 
+
+.header__slider-page{
+  margin: 0 auto;
+  /* position: relative; */
+  /* left: 0; */
+  text-align: center;
+}
 
 
 .header__subtitle{
