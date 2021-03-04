@@ -1045,7 +1045,7 @@ body {
 }
 
 .we-do__dropdon-text{
-  max-width: 600px;
+  min-width: 600px;
 }
 
 .we-do__item, .we-do__text-wrapper{
@@ -1070,6 +1070,10 @@ body {
   margin: 24px;
 }
 
+.arrow_up .open{
+  display: none;
+}
+
 .we-do__item-inner{
   display: flex;
   align-items: center;
@@ -1091,6 +1095,7 @@ body {
   font-size: 15px;
   font-style: italic;
   color: #999;
+  display: none;
 }
 
 .we-do__icon-wrapper{
