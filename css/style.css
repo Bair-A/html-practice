@@ -1046,6 +1046,11 @@ body {
 
 .we-do__dropdon-text{
   min-width: 600px;
+  min-height: 550px;
+}
+
+.we-do__text-wrapper{
+  max-width: 600px;
 }
 
 .we-do__item, .we-do__text-wrapper{
@@ -1066,12 +1071,16 @@ body {
   transition: all ease .5s;
 }
 
-.we-do_arrow{
+.arrow_up, .arrow_down{
   margin: 24px;
 }
 
-.arrow_up .open{
+.we-do__item .arrow_up, .open .arrow_down{
   display: none;
+}
+
+.open .arrow_up{
+  display: inherit;
 }
 
 .we-do__item-inner{
@@ -1097,6 +1106,11 @@ body {
   color: #999;
   display: none;
 }
+
+.we-do__text-wrapper--active{
+  display: inherit;
+}
+
 
 .we-do__icon-wrapper{
   margin: 15px;

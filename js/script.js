@@ -29,11 +29,10 @@ hederSliderButton.forEach((event, index) => {
                                                                 //we-do
 const weDoItem = document.querySelectorAll(".we-do__item");
 const weDoText = document.querySelectorAll(".we-do__text-wrapper");
-const arrowUp = document.querySelectorAll(".we-do__text-wrapper");
-const weDoText = document.querySelectorAll(".we-do__text-wrapper");
 
 weDoItem.forEach((event, index) => {
     event.addEventListener("click", () => {
-
+        event.classList.toggle("open");
+        weDoText[index].classList.toggle('we-do__text-wrapper--active')
     })
 })
