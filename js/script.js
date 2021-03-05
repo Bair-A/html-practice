@@ -34,6 +34,6 @@ weDoItem.forEach((event, index) => {
     event.addEventListener("click", () => {
         event.classList.toggle("open");
 
-        weDoText[index].classList.toggle("we-do__text-wrapper--active");
+        weDoText[index].classList.toggle("we-do__text-wrapper--active");       
     })
 })
