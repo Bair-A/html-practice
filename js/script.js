@@ -37,3 +37,35 @@ weDoItem.forEach((event, index) => {
         weDoText[index].classList.toggle("we-do__text-wrapper--active");       
     })
 })
+
+                                                            //we-do-slider
+const sliderLine = document.querySelector(".we-do__slider-line");
+const leftArrow = document.querySelector(".we-do__left-arrow");
+const rightArrow = document.querySelector(".we-do__right-arrow");
+const sliderItems = document.querySelectorAll(".we-do__slider-item");
+let count = 0;
+
+function init() {
+    let width = document.querySelector(".we-do__slider-window").offsetWidth;
+    sliderLine.style.width = width*sliderItems.length + "px";
+    sliderItems.forEach(item => {
+        item.style.width = width + "px";  
+        item.style.height = "auto";
+    })
+
+    
+    console.log(width);
+    console.log(sliderLine.style.width);
+}
+window.addEventListener("resize", init);
+init();
+
+leftArrow.addEventListener("click", () => {
+    count++;
+    rollSlider();
+    console.log("click");
+})
+
+function rollSlider() {
+    sliderLine.style.transform = "translate(-'+count*width+'px)";
+}

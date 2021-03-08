@@ -1048,17 +1048,17 @@ body {
 
 @media (max-width: 1200px){
   .we-do .title-wrapper {
-    margin: 50px auto 70px;
+    margin: 40px auto 60px;
   }
 }
 @media (max-width: 992px){
   .we-do .title-wrapper {
-    margin: 40px auto 60px;
+    margin: 30px auto 50px;
   }
 }
 @media (max-width: 767px){
   .we-do .title-wrapper{
-    margin: 40px auto 60px;
+    margin: 20px auto 40px;
   }
 }
 
@@ -1070,9 +1070,20 @@ body {
   justify-content: space-between;
   margin: 90px 0 0 0;
 }
+@media (max-width: 1200px){
+  .we-do__content {
+    margin: 80px 0 0 0;
+  }
+}
+@media (max-width: 992px){
+  .we-do__content {
+    margin: 60px 0 0 0;
+  }
+}
 @media (max-width: 767px){
   .we-do__content{
     flex-direction: column;
+    margin: 40px 0 0 0;
   }
 }
 
@@ -1190,6 +1201,91 @@ body {
   max-height: 180px;
   overflow-y: scroll;
 }
+
+
+.we-do__slider{
+  display: flex;
+  align-items: center;
+  min-height: 290px;
+  background-color:#ebd587;
+}
+
+.we-do__slider-window{
+  width: 70%;
+  overflow: hidden;
+}
+.we-do__slider-img{
+  margin: 44px;
+}
+
+.we-do__slider-img-wrapper{
+  border: 3px solid #95e1d3;
+  max-height: 150px;
+  max-width: 150px;
+}
+
+.we-do__slider-arrow{
+  display: block;
+  margin: 0 auto;
+}
+
+
+.we-do__slider-line{
+  display: flex;
+  position: relative;
+  width: 300%;
+}
+
+.we-do__slider-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  background-color: khaki;
+  width: 100%;
+}
+
+.we-do__slider-text-wrapper{
+  max-width: 70%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.we-do__slider-text{
+  font-family: "Roboto", "sans-serif";
+  line-height: 36px;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 24px;
+  color: #999;
+}
+
+.we-do__name{
+  display: block;
+  margin: 10px 0 0 0px ;
+  display: flex;
+  align-items: center;
+  font-family: "Kaushan Script", "sans-serif";
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #333;
+}
+
+.we-do__name::before{
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+}
+
+.we-do__arrow-right, .we-do__arrow-left{
+  background-color: #95e1d3;
+  width: 15%;
+}
+
 
 
 
