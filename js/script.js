@@ -43,29 +43,41 @@ const sliderLine = document.querySelector(".we-do__slider-line");
 const leftArrow = document.querySelector(".we-do__left-arrow");
 const rightArrow = document.querySelector(".we-do__right-arrow");
 const sliderItems = document.querySelectorAll(".we-do__slider-item");
+let width;
 let count = 0;
 
 function init() {
-    let width = document.querySelector(".we-do__slider-window").offsetWidth;
+    width = document.querySelector(".we-do__slider-window").offsetWidth;
     sliderLine.style.width = width*sliderItems.length + "px";
     sliderItems.forEach(item => {
         item.style.width = width + "px";  
         item.style.height = "auto";
     })
-
-    
-    console.log(width);
-    console.log(sliderLine.style.width);
 }
+function rollSlider() {
+    sliderLine.style.transform = `translate(-${count * width}px)`;
+    console.log(sliderLine.style.transform)
+}
+
 window.addEventListener("resize", init);
 init();
 
-leftArrow.addEventListener("click", () => {
+rightArrow.addEventListener("click", () => {
     count++;
+    if(count >= sliderItems.length) {
+        count = 0; 
+    }
     rollSlider();
-    console.log("click");
+    console.log("rightArrow")
 })
 
-function rollSlider() {
-    sliderLine.style.transform = "translate(-'+count*width+'px)";
-}
+leftArrow.addEventListener("click", () => {
+    count--;
+    if(count < 0) {
+        count = sliderItems.length - 1; 
+    }
+    rollSlider();
+    console.log("leftArrow");
+})
+
+
