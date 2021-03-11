@@ -1328,7 +1328,36 @@ body {
 }
 
 
+                                                                /* team */
 
+.team__content{
+  display: flex;
+  justify-content: space-between;
+  margin: 92px 0 199px 0;
+}
+
+.team__item{
+  width: 100%;
+  max-width: 380px;
+}
+
+.team__item-inner{
+  background-color: #95e1d3;
+}
+
+.team__photo-wrapper{
+  background: linear-gradient(#ed8889, #e3d082);
+  transition: transform 2s ease 0;
+}
+
+.team__photo{
+  
+}
+
+.team__item:hover .team__photo-wrapper{
+  transform: translate3d(-10px, -10px, 0);
+  transition: all 2s ease 0;
+}
 
 @media (max-width: 1200px){
   
