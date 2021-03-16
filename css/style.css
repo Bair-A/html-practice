@@ -1503,6 +1503,142 @@ body {
   }
 }
 
+                                                                    /* work */
+
+.collection{
+  display: grid;
+  grid-template: repeat(2, 1fr)/ repeat(4, 1fr);
+  max-height: 780px;
+  margin: 100px 0;
+}
+@media (max-width: 767px){
+  .collection{
+    display: block;
+  }
+}
+
+
+
+.collection__item{
+  position: relative;
+  padding: 0 0 81% 0;
+  background: linear-gradient(to bottom, #e66465, #9198e5);
+  text-align: center;
+}
+
+.collection__item:hover .collection__img{
+  opacity: .1;
+}
+
+.collection__img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: 2;
+
+  transition: opacity .5s ease;
+}
+
+.collection__item--big{
+  grid-row: span 2;
+}
+
+.collection__content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.collection__title{
+  font-family: "Montserrat", "sans-serif";
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.collection__text{
+  font-family: "Roboto", "sans-serif";
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+  font-style: italic;
+  color: #fff;
+}
+
+                                                                              /* slider */
+.slider__wrapper{
+  position: relative;
+}
+.arrow__left{
+  width: 30px;
+  height: 30px;
+  border-top: #999 3px solid;
+  border-left: #999 3px solid;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  /* transform: translate(-50%, -50%); */
+
+  transform: rotate(-45deg);
+  
+}
+.slider__window{
+  max-width: 1010px;
+  margin: 0 auto;
+}
+
+.slider__item{
+  display: flex;
+  justify-content: center;
+}
+
+.slider__quote{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slider__img{
+  margin: 0 20px 0 0;
+}
+
+.slider__text{
+  font-family: "Roboto", "sans-serif";
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 300;
+  font-style: italic;
+  color: #999;
+}
+.slider__author-name{
+  margin: 20px 0 0 0;
+  display: flex;
+  align-items: center;
+
+  font-family: "Kaushan Script", "sans-serif";
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #333;
+}
+
+.slider__author-name::before{
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #f38181;
+  display: inline-block;
+}
+
 @media (max-width: 1200px){
   
 }
