@@ -1253,7 +1253,7 @@ body {
   display: flex;
   position: relative;
   width: 300%;
-  transition: all ease .5s;
+  transition: all .3s ease ;
 }
 
 
@@ -1572,13 +1572,14 @@ body {
 }
 
                                                                               /* slider */
-.slider{
-  max-height: 210px;
-}
 .slider__wrapper{
+  max-height: 210px;
   position: relative;
   padding: 0 30px;
 }
+
+
+
 .arrow__left{
   width: 30px;
   height: 30px;
@@ -1590,6 +1591,13 @@ body {
   left: 0;
   transform: translateY(-50%) rotate(-45deg); 
 }
+@media (max-width: 767px){
+  .arrow__left{
+    left: 10px;
+  }
+}
+
+
 
 .arrow__right{
   width: 30px;
@@ -1602,11 +1610,37 @@ body {
   right: 0;
   transform: translateY(-50%) rotate(135deg); 
 }
+@media (max-width: 767px){
+  .arrow__right{
+    right: 10px;
+  }
+}
 
+
+
+
+.arrow__right, .arrow__left{
+  transition: all .5s ease;
+}
+
+.arrow__left:hover, .arrow__right:hover{
+  cursor: pointer;
+  border-top: #f38181 3px solid;
+  border-left: #f38181 3px solid;
+}
 .slider__window{
   width: 80%;
   margin: 0 auto;
+  overflow: hidden;
 }
+
+.slider__line{
+  display: flex;
+  width: 300%;
+  transition: all .3s ease;
+}
+
+
 
 .slider__item{
   display: flex;
@@ -1614,6 +1648,14 @@ body {
   justify-content: space-between;
   width: 100%;
 }
+@media (max-width: 767px){
+  .slider__item{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
 
 .slider__quote{
   display: flex;
@@ -1621,10 +1663,16 @@ body {
   justify-content: center;
   max-width: 70%;
 }
+@media (max-width: 767px){
+  .slider__quote{
+    width: 100%;
+  }
+}
+
 
 .slider__img-wrapper{
   margin: 0 20px 0 0;
-  padding: 0 0 80% 0;
+  padding: 0 0 20% 0;
   position: relative;
   width: 20%;
 }
@@ -1632,12 +1680,14 @@ body {
 .slider__img{
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: auto;
   top: 0;
   left: 0;
   object-fit: cover;
   z-index: 1;
 }
+
+
 
 .slider__text{
   font-family: "Roboto", "sans-serif";
@@ -1647,6 +1697,13 @@ body {
   font-style: italic;
   color: #999;
 }
+@media (max-width: 767px){
+  .slider__text{
+    font-size: 14px;
+  }
+}
+
+
 .slider__author-name{
   margin: 20px 0 0 0;
   display: flex;
@@ -1658,6 +1715,12 @@ body {
   font-weight: 400;
   color: #333;
 }
+@media (max-width: 767px){
+  .slider__author-name{
+    font-size: 14px;
+  }
+}
+
 
 .slider__author-name::before{
   content: "";
