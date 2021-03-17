@@ -1731,6 +1731,46 @@ body {
   display: inline-block;
 }
 
+                                                                                /* say */
+
+.{
+
+}
+
+.say{
+  background: url(../assets/img/say/say_bg.jpg) center/cover no-repeat;
+}
+
+.say__item{
+  display: flex;
+  justify-content: space-between;
+}
+
+.say__img-wrapper{
+  position: relative;
+  padding: 0 0 20% 0;
+  width: 19%;
+  background-color: #f38181;
+}
+
+.say__img{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.say__text-wrapper{
+  width: 70%;
+  background-color: #fce38a;
+}
+
+.say__content{
+  display: grid;
+  column-gap: 100px;
+  row-gap: 20px;
+  grid-template: repeat(2, 1fr)/ repeat(2, 1fr);
+}
+
 @media (max-width: 1200px){
   
 }
