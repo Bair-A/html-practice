@@ -2055,7 +2055,9 @@ body {
   max-width: 467px;
 }
 @media (max-width: 1200px){
-  
+  .footer__social{
+    margin: 100px 0;
+  }
 }
 @media (max-width: 992px){
 
@@ -2210,7 +2212,9 @@ body {
 
 
 @media (max-width: 1200px){
-  
+  .footer__instagram{
+    margin: 100px 0;
+  }
 }
 @media (max-width: 992px){
   
