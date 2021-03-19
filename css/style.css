@@ -2013,7 +2013,21 @@ body {
                                                                                 /* footer */
 .footer{
   padding: 80px 0;
+  position: relative;
 }
+
+@media (max-width: 1200px){
+  .footer .container{
+    max-width: 467px;
+  }
+}
+@media (max-width: 992px){
+  
+}
+@media (max-width: 767px){
+  
+}
+
 
 .footer__wrapper{
   display: flex;
@@ -2021,7 +2035,8 @@ body {
 }
 @media (max-width: 1200px){
   .footer__wrapper{
-    display: inherit;
+    flex-direction: column;
+   
   }
 }
 @media (max-width: 992px){
@@ -2037,7 +2052,7 @@ body {
   max-width: 467px;
 }
 @media (max-width: 1200px){
-
+  
 }
 @media (max-width: 992px){
 
@@ -2109,15 +2124,40 @@ body {
   color: #999;
 }
 
+.footer__form{
+  margin: 39px 0 0 0;
+}
+
+.footer__mail-input{
+  width: 230px;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #e7e7e7;
+}
+
+.footer__mail-button{
+  width: 150px;
+  height: 40px;
+  background-color: #95e1d3;
+
+  font-family: "Montserrat", "sans-serif";
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
 
 .footer__blogs{
   max-width: 335px;
 }
 @media (max-width: 1200px){
- 
+  .footer__blogs{
+    margin: 100px 0;
+  }
 }
 @media (max-width: 992px){
-
+  
 }
 @media (max-width: 767px){
   
@@ -2164,6 +2204,18 @@ body {
   color: #999;
 }
 
+
+
+@media (max-width: 1200px){
+  
+}
+@media (max-width: 992px){
+  
+}
+@media (max-width: 767px){
+  
+}
+
 .footer__instagram-title{
   font-family: "Montserrat", "sans-serif";
   font-size: 12px;
@@ -2181,21 +2233,37 @@ body {
   max-height: 272px;
   gap: 2px;
 }
-@media (max-width: 1200px){
-  .footer__instagram-images{
-   
-  }
+
+.footer__basement{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+
+  font-family: "Montserrat", "sans-serif";
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #333333;
 }
-@media (max-width: 992px){
 
+.footer__basement::before{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #e5e5e5;
+  margin: 0 0 22px 0;
 }
-@media (max-width: 767px){
-  
+
+.footer__basement{
+ margin: 22px 0;
 }
 
-
-
-
+.footer__basement span{
+  color: #f38181;
+}
 
 @media (max-width: 1200px){
   
