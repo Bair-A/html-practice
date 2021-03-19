@@ -144,6 +144,12 @@ body {
   font-weight: 700;
   color: #fff;
 }
+@media(max-width:767px){
+  .logo{
+    margin-left: 30px;
+  }
+
+}
 
 
 
@@ -155,7 +161,7 @@ body {
     top: 10px;
     height: 70px;
     width: 70px;
-    border: solid 3px #fff;
+    border: solid 3px #333;
     border-radius: 10%;
     z-index: 100;
   }
@@ -167,7 +173,7 @@ body {
     right: 5px;
     left: 5px;
     height: 6px;
-    background-color: #fff;
+    background-color: #333;
     border-radius: 25px;
     transition: 1s;
   }
@@ -178,7 +184,7 @@ body {
     display: block;
     width: 100%;
     height: 6px;
-    background-color: #fff;
+    background-color: #333;
     border-radius: 25px;
     transition: 1s;
   }
@@ -194,14 +200,14 @@ body {
   }
 
   .header__burger--active .header__burger-inner::before{
-    background-color:#fff;
+    background-color:#333;
     top: 0;
     transform: rotate(45deg);
     transition: 1s;
   }
 
   .header__burger--active .header__burger-inner::after{
-    background-color:#fff;
+    background-color:#333;
     top: 0;
     transform: rotate(-45deg);
     transition: 1s;
@@ -224,14 +230,18 @@ body {
     position: fixed;
     top: -100vh;
     background-color: #e68582;
-    height: 100vh;
-    width: 100%;
+    height: 75vh;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 2;
     transition: 1s;
+    border-radius: 10px;
+    border: #fff 3px solid;
   }
 
   .header__menu.header__menu--active{
-    top: 0;
+    top: -10px;
     transition: 1s;
   }
 }
@@ -246,6 +256,7 @@ body {
     .header__list{
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -492,7 +503,7 @@ body {
 }
 @media(max-width:767px){
   .header__slider-item{
-    width: 100%;
+    width: 40%;
     margin: 0  auto;
   }
 }
@@ -2016,9 +2027,9 @@ body {
   position: relative;
 }
 @media (max-width: 767px){
-  .footer{
-    padding: 0 0 100px 0;
-  }
+  /* .footer{
+    padding-bottom: 100px;
+  } */
 }
 
 
@@ -2224,7 +2235,9 @@ body {
   
 }
 @media (max-width: 767px){
-  
+  .footer__instagram{
+    margin-bottom: 100px;
+  }
 }
 
 .footer__instagram-title{
